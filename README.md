@@ -14,6 +14,12 @@ Obviously, this is NOT a medical device, just a little side project from a crazy
 
 If you want to see how it was put together and used, please check out my [Review of the Raspberry Pi Pico microcontroller](TODO: Link) on [my YouTube channel](https://www.youtube.com/c/JeffGeerling).
 
+## Circuit Diagram
+
+<p align="center"><img src="images/baby-temp-mon-sketch.png?raw=true" width="600" height="auto" alt="Fritzing sketch of LED connections to Raspberry Pi Pico" /></a></p>
+
+See also: [Fritzing sketch](images/baby-temp-mon-sketch.fzz)
+
 ## Usage
 
   1. Make sure you have MicroPython flashed to your Raspberry Pi Pico.

@@ -8,7 +8,6 @@ name: Lint
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
