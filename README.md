@@ -24,6 +24,5 @@ See also: [Fritzing sketch](images/baby-temp-mon-sketch.fzz)
 
   1. Make sure you have MicroPython flashed to your Raspberry Pi Pico.
   2. Copy the `main.py` script from this repository to your board.
-  3. Connect LEDs to the board following the circuit diagram below:
-
-TODO: Add circuit diagram.
+  3. Connect LEDs to the board following the circuit diagram shown above.
+  4. Power up the board, and watch the LEDs.
