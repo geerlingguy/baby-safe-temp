@@ -1,4 +1,6 @@
+"""Baby safe temperature monitor."""
 
+# pylint: disable=import-error
 import machine
 import utime
 
@@ -6,7 +8,7 @@ import utime
 sensor_temp = machine.ADC(4)
 
 # See Raspberry Pi Pico datasheet for the conversion factor.
-conversion_factor = 3.3 / (65535)
+CONVERSION_FACTOR = 3.3 / (65535)
 
 # Set up LEDs.
 led_onboard = machine.Pin(25, machine.Pin.OUT)
@@ -15,12 +17,14 @@ led_red = machine.Pin(14, machine.Pin.OUT)
 led_blue = machine.Pin(13, machine.Pin.OUT)
 
 def leds_off():
+    """Turn off all the LEDs."""
     led_onboard.value(0)
     led_green.value(0)
     led_red.value(0)
     led_blue.value(0)
 
 def leds_on():
+    """Turn on all the LEDs."""
     led_onboard.value(1)
     led_green.value(1)
     led_red.value(1)
@@ -35,7 +39,7 @@ leds_off()
 # Go into a loop.
 while True:
     # Get a temperature reading.
-    reading = sensor_temp.read_u16() * conversion_factor
+    reading = sensor_temp.read_u16() * CONVERSION_FACTOR
 
     # Convert the temperature into degrees celsius.
     temperature = 27 - (reading - 0.706)/0.001721
@@ -60,4 +64,3 @@ while True:
 
     # Sleep for 5 seconds.
     utime.sleep(5)
-
