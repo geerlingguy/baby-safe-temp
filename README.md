@@ -1,5 +1,7 @@
 # Baby Safe Temperature Monitor
 
+![Lint](https://github.com/geerlingguy/baby-safe-temp/workflows/Lint/badge.svg?event=push)
+
 This project is meant to build a temperature safety monitor for a baby or small child's room.
 
 Studies have shown the risk for Sudden Infant Death Syndrome (SIDS) increases when a baby's room temperature is outside the range of 20-22.2°C (68-72°F).
@@ -26,3 +28,17 @@ See also: [Fritzing sketch](images/baby-temp-mon-sketch.fzz)
   2. Copy the `main.py` script from this repository to your board.
   3. Connect LEDs to the board following the circuit diagram shown above.
   4. Power up the board, and watch the LEDs.
+
+## Similar Projects
+
+I also created a Raspberry Pi-based temperature monitoring cluster for my entire house back in 2016, and I open sourced the design and code for that system.
+
+You can find it here: [Raspberry Pi Temperature Monitoring App](https://github.com/geerlingguy/temperature-monitor).
+
+## License
+
+MIT License
+
+## Author
+
+This project was created by [Jeff Geerling](https://www.jeffgeerling.com) in 2021.
